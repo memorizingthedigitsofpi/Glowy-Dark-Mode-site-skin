@@ -185,8 +185,8 @@ ul.navigation.actions li a,
 }
 
 #dashboard a:hover {
-  background: #0d1d1f;
-  box-shadow: 0px 0px 15px #f9f6ce;
+  background: #f9f6ce;
+  color: #000 !important;
 }
 
 #dashboard a {
@@ -285,20 +285,8 @@ li.blurb {
   box-shadow: 0px 0px 15px #f9f6ce;
 }
 
-#stat_chart svg rect:first-of-type {
-  opacity: 60%;
-}
-
-#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect,
-#stat_chart svg g:nth-of-type(2) > g rect:last-of-type,
-#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:first-of-type {
-  filter: hue-rotate(140deg);
-  opacity: 80% !important;
-}
-
-.statistics .index li:nth-of-type(2n) {
-  background: #0d1d1f;
-  border: 1px solid #f9f6ce;
+#stat_chart svg {
+  filter: invert(90%) sepia(150%) brightness(60%) hue-rotate(60deg) saturate(120%);
 }
 
 .reading h4.viewed,
@@ -377,4 +365,54 @@ dd.relationship.tags a {
 
 .filters .expanded .expander {
   background: url("https://64.media.tumblr.com/dab095a2fd9387bc1e0c57747ba6b13f/94c6737c6db9ad60-ad/s1280x1920/c1a4e14e0565cdcac5d3e20bebac3ab440f2d607.png") left center no-repeat;
+}
+
+
+span.rating-general-audience.rating,
+span.category-gen.category,
+span.complete-yes.iswip {
+  filter: sepia(30%) saturate(60%) brightness(70%) contrast(160%) hue-rotate(40deg);
+}
+
+span.rating-teen.rating {
+  filter: invert(100%) brightness(130%) hue-rotate(280deg) saturate(40%);
+}
+
+span.category-slash.category {
+  filter: brightness(150%) saturate(40%) hue-rotate(280deg);
+}
+
+span.category-het.category {
+  filter: brightness(170%) saturate(40%) contrast(80%) hue-rotate(160deg);
+}
+
+span.category-multi.category {
+  filter: brightness(120%) saturate(40%) sepia(130%) hue-rotate(80deg);
+}
+
+span.rating-mature.rating,
+span.warning-choosenotto.warnings {
+  filter: saturate(40%) hue-rotate(110deg) brightness(80%) contrast(120%);
+}
+
+span.rating-notrated.rating,
+span.category-none.category,
+span.warning-no.warnings {
+  filter: brightness(0) saturate(100%) invert(6%) sepia(52%) saturate(815%) hue-rotate(250deg) brightness(91%) contrast(102%);
+}
+
+span.rating-explicit.rating,
+span.category-femslash.category,
+span.warning-yes.warnings,
+span.complete-no.iswip {
+  filter: hue-rotate(160deg) contrast(80%) saturate(80%) brightness(120%);
+}
+
+.blurb h4 a:visited {
+  color: #024b18 !important;
+}
+
+#main a:hover {
+  background: #f9f6ce;
+  color: #000;
 }
