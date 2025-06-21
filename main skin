@@ -416,3 +416,7 @@ span.complete-no.iswip {
   background: #f9f6ce;
   color: #000;
 }
+
+.statistics .index li:nth-of-type(2n) {
+  background: #0d1d1f;
+}
