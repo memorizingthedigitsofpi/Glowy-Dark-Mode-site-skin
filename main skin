@@ -32,7 +32,8 @@
   border: 1px solid #f9f6ce;
 }
 
-#outer.wrapper {
+#outer.wrapper,
+.filtering .filters #leave_filters {
   background: #0d1d1f;
   color: #f9f6ce;
 }
